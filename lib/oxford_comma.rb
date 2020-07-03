@@ -3,5 +3,5 @@ def oxford_comma(array)
   if (array.split).length == 2
     (array.split).join(" and ")
   elsif (array.split).length >= 3
-    (array.split).last << ", and "
+    array.split << [(", and ")-2]
 end
